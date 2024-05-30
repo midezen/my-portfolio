@@ -23,7 +23,7 @@ const Items = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
   width: 80%;
 `;
 
@@ -35,12 +35,21 @@ const Item = styled.div`
   height: 200px;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  background-color: #181818;
+  border-radius: 10px;
+  padding-bottom: 10px;
+
+  &:hover {
+    scale: 1.1;
+  }
 `;
 
 const Image = styled.img`
   width: 100%;
   height: 95%;
   object-fit: cover;
+  border-radius: 10px;
 `;
 
 const Name = styled.span`
