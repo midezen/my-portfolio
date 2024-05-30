@@ -11,6 +11,9 @@ import React from "./img/React.png";
 import node from "./img/Node.js.png";
 import mongoDb from "./img/MongoDB.png";
 import git from "./img/Git.png";
+import Ayomide from "./img/Ay Image.png";
+import Music from "./img/Music.png";
+import Netflix from "./img/Netflix.png";
 
 export const skillsData = [
   {
@@ -77,5 +80,38 @@ export const skillsData = [
     id: 13,
     img: Socket,
     name: "Socket.io",
+  },
+];
+
+export const projectsData = [
+  {
+    id: 1,
+    image: Netflix,
+    name: "Animated Music Landing Page",
+  },
+  {
+    id: 2,
+    image: Music,
+    name: "Netflix User Interface",
+  },
+  {
+    id: 3,
+    image: Netflix,
+    name: "React Admin Dashboard",
+  },
+  {
+    id: 4,
+    image: Music,
+    name: "Connectiverse (Social Media)",
+  },
+  {
+    id: 5,
+    image: Netflix,
+    name: "Mide Store (E-commerce)",
+  },
+  {
+    id: 6,
+    image: Music,
+    name: "Task Tracker",
   },
 ];

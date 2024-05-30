@@ -11,7 +11,7 @@ const Container = styled.div`
 const Heading = styled.h1`
   display: flex;
   justify-content: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 `;
 
 const ItemsWrapper = styled.div`
