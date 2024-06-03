@@ -24,6 +24,11 @@ const Middle = styled.div`
 const Span = styled.span`
   font-size: 16px;
   font-weight: bold;
+  transition: all 0.3s linear;
+
+  &:hover {
+    border-bottom: 1px solid #e6e600;
+  }
 `;
 
 const A = styled.a`

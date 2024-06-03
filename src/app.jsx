@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 const Container = styled.div`
   background-color: #202020;
@@ -11,6 +12,7 @@ const Container = styled.div`
   font-family: "Mulish", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  height: fit-content;
 `;
 
 const App = () => {
@@ -21,6 +23,7 @@ const App = () => {
       <About />
       <Skills />
       <Projects />
+      <Contact />
     </Container>
   );
 };

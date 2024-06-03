@@ -39,6 +39,7 @@ const Item = styled.div`
   background-color: #181818;
   border-radius: 10px;
   padding-bottom: 10px;
+  transition: all 0.3s ease-out;
 
   &:hover {
     scale: 1.1;
@@ -49,7 +50,8 @@ const Image = styled.img`
   width: 100%;
   height: 95%;
   object-fit: cover;
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 `;
 
 const Name = styled.span`
