@@ -104,15 +104,15 @@ export const projectsData = [
     link: "https://animated-music-app-landing-page.netlify.app/",
     github: "https://github.com/midezen/Animated-Music-App-Landing-Page",
   },
-  {
-    id: 3,
-    image: Netflix,
-    name: "React Admin Dashboard",
-    status: "completed",
-    desc: "This is a front-end project built with React and styled-components, it is an admin dashboard for an e-commerce store",
-    link: "",
-    github: "https://github.com/midezen/React-Admin-Dashboard",
-  },
+  // {
+  //   id: 3,
+  //   image: Netflix,
+  //   name: "React Admin Dashboard",
+  //   status: "completed",
+  //   desc: "This is a front-end project built with React and styled-components, it is an admin dashboard for an e-commerce store",
+  //   link: "",
+  //   github: "https://github.com/midezen/React-Admin-Dashboard",
+  // },
 
   {
     id: 4,
@@ -138,7 +138,7 @@ export const projectsData = [
     image: Task,
     name: "Task Tracker",
     status: "in progress",
-    desc: "This is a task management system my friend and I built for a collegue's final year project, technologies used were React + Typscript for the front-end, and NodeJs, Express, and MongoDB for the backend. I handled only the backend for this project. Json Web Token (JWT) and Cookies were also used in the backend for authentication and verification.",
+    desc: "This is a task management system my friend and I built for a collegue's final year project. Technologies used in this project are React + Typscript for the front-end, and NodeJs, Express, and MongoDB for the backend. I handled only the backend for this project. Json Web Token (JWT) and Cookies were also used in the backend for authentication and verification.",
     link: "https://dazzling-praline-5c3ff0.netlify.app/auth",
     github: "https://github.com/LordCodex164/Yabatech-task-tracker",
   },

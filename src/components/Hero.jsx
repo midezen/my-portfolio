@@ -55,6 +55,12 @@ const Image = styled.img`
 `;
 
 const Hero = () => {
+  const scrollToBottom = () => {
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: "smooth", // This makes the scroll smooth
+    });
+  };
   return (
     <Container>
       <Left>
@@ -62,7 +68,7 @@ const Hero = () => {
           Hi, I'm <Name>Ayomide Oluwadiya</Name>
         </P>
         <P>A Full Stack Web Developer, from Lagos.</P>
-        <Button>Contact me</Button>
+        <Button onClick={scrollToBottom}>Contact me</Button>
       </Left>
       <Image src={Ayomide} alt="My Image" />
     </Container>
