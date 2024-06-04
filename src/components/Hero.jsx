@@ -53,6 +53,12 @@ const P = styled.p`
     flex-direction: column;
     gap: 10px;
   }
+  @media (max-width: 350px) {
+    font-size: 14px;
+  }
+  @media (max-width: 260px) {
+    font-size: 12px;
+  }
 `;
 
 const Name = styled.h2`
@@ -76,6 +82,15 @@ const Name = styled.h2`
   }
   @media (max-width: 420px) {
     margin-bottom: -20px;
+  }
+  @media (max-width: 350px) {
+    font-size: 23px;
+  }
+  @media (max-width: 350px) {
+    letter-spacing: 3px;
+  }
+  @media (max-width: 260px) {
+    font-size: 18px;
   }
 `;
 

@@ -67,6 +67,7 @@ const BoxHeading = styled.div`
   justify-content: center;
   align-items: center;
   font-family: san-serif;
+  margin-bottom: 20px;
 `;
 
 const IconWrapper = styled.div`
@@ -154,6 +155,10 @@ const Projects = () => {
             "@media (max-width:800px)": {
               width: "300px",
               height: "fit-content",
+            },
+            "@media (max-width:400px)": {
+              width: "300px",
+              height: "100%",
             },
           }}
           role="presentation"
