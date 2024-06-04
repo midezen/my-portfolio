@@ -16,6 +16,8 @@ import Netflix from "./img/Netflix.png";
 import Crypto from "./img/Crypto.png";
 import Task from "./img/Task.png";
 import Google from "./img/Google.png";
+import Social from "./img/Social.png";
+import Midetube from "./img/Midetube.png";
 
 export const skillsData = [
   {
@@ -135,6 +137,16 @@ export const projectsData = [
 
   {
     id: 6,
+    image: Midetube,
+    name: "Youtube UI Clone",
+    status: "completed",
+    desc: "This is a front-end design project built with React, styled components and Material-UI, theme feature (lightmode/darkmode) was also implemented in this project. It is a Youtube UI clone",
+    link: "https://midetube.netlify.app/",
+    github: "https://github.com/midezen/videoshare",
+  },
+
+  {
+    id: 7,
     image: Task,
     name: "Task Tracker",
     status: "in progress",
@@ -144,16 +156,16 @@ export const projectsData = [
   },
 
   {
-    id: 7,
-    image: Music,
+    id: 8,
+    image: Social,
     name: "Connectiverse (Social Media App)",
     status: "in progress",
-    desc: "This is a full stack project still in progress, it is being built with MERN stack technologies (MongoDB, Express, React and Nodejs), Redux is also being used for global state management in this project, styled-components for styling, react-router for pages, Material UI for Icons, firebase for file storage, and socket.io for real time messaging",
+    desc: "This is a full stack project still in progress, it is being built with MERN stack technologies (MongoDB, Express, React and Nodejs), Redux is also being used for global state management in this project, styled-components for styling, react-router for pages, Material UI for Icons, firebase for file storage, and socket.io for real time messaging, there is also lightmode/darkmode feature",
     link: "This project is still in progress, the link will be dropped on completion, kindly check out the github repo below to see how far I've gone",
     github: "https://github.com/midezen/social-media",
   },
   {
-    id: 8,
+    id: 9,
     image: Netflix,
     name: "Mide Store (E-commerce App)",
     status: "in progress",
