@@ -26,6 +26,12 @@ const Items = styled.div`
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
   font-size: 16px;
+  @media (max-width: 607px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 const Items2 = styled.div`
@@ -34,6 +40,12 @@ const Items2 = styled.div`
   grid-gap: 10px;
   margin-top: 10px;
   font-size: 16px;
+  @media (max-width: 607px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 const Items3 = styled.div`
@@ -42,6 +54,12 @@ const Items3 = styled.div`
   grid-gap: 10px;
   margin-top: 10px;
   font-size: 16px;
+  @media (max-width: 607px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 const Item = styled.div`

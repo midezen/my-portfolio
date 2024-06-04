@@ -18,6 +18,7 @@ import Task from "./img/Task.png";
 import Google from "./img/Google.png";
 import Social from "./img/Social.png";
 import Midetube from "./img/Midetube.png";
+import midestore from "./img/midestore.png";
 
 export const skillsData = [
   {
@@ -149,7 +150,7 @@ export const projectsData = [
     id: 7,
     image: Task,
     name: "Task Tracker",
-    status: "in progress",
+    status: "completed",
     desc: "This is a task management system my friend and I built for a collegue's final year project. Technologies used in this project are React + Typscript for the front-end, and NodeJs, Express, and MongoDB for the backend. I handled only the backend for this project. Json Web Token (JWT) and Cookies were also used in the backend for authentication and verification.",
     link: "https://dazzling-praline-5c3ff0.netlify.app/auth",
     github: "https://github.com/LordCodex164/Yabatech-task-tracker",
@@ -161,16 +162,21 @@ export const projectsData = [
     name: "Connectiverse (Social Media App)",
     status: "in progress",
     desc: "This is a full stack project still in progress, it is being built with MERN stack technologies (MongoDB, Express, React and Nodejs), Redux is also being used for global state management in this project, styled-components for styling, react-router for pages, Material UI for Icons, firebase for file storage, and socket.io for real time messaging, there is also lightmode/darkmode feature",
-    link: "This project is still in progress, the link will be dropped on completion, kindly check out the github repo below to see how far I've gone",
+    excuse:
+      "This project is still in progress, the link will be dropped on completion, kindly check out the github repo below to see how far I've gone",
+    link: "",
     github: "https://github.com/midezen/social-media",
   },
   {
     id: 9,
-    image: Netflix,
+    image: midestore,
     name: "Mide Store (E-commerce App)",
     status: "in progress",
-    desc: "This is a full stack project still in progress, it is being built with MERN stack technologies (MongoDB, Express, React and Nodejs), Redux is also being used for global state management in this project, styled-components for styling, react-router for pages, and Material UI for Icons. Stripe is also integrated into this project to handle payment transactions, and also an admin dashboard to track store and business activities.",
-    link: "This project is still in progress, the link will be dropped on completion, kindly check out the github repo below to see how far I've gone",
+    desc: "This is a full stack project still in progress, it is being built with MERN stack technologies (MongoDB, Express, React and Nodejs), Redux is also being used for global state management in this project, Sass for styling, react-router for pages, and Material UI for Icons. Stripe will also be integrated into this project to handle payment transactions, and also an admin dashboard to track store and business activities.",
+    link: "",
+    excuse:
+      "This project is still in progress, the link will be dropped on completion, kindly check out the github repo below to see how far I've gone",
     github: "https://github.com/midezen/MideStore",
+    server: "https://github.com/midezen/MideStore-server",
   },
 ];

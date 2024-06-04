@@ -19,14 +19,27 @@ const Navbar = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 80px;
+  padding: 20px 80px;
   margin-bottom: 20px;
+  @media (max-width: 600px) {
+    padding: 20px 20px;
+  }
+
+  @media (max-width: 447px) {
+    padding: 20px 5px;
+  }
+  @media (max-width: 415px) {
+    padding: 20px 10px;
+  }
 `;
 
 const Logo = styled.img`
   height: 50px;
   width: 60px;
   object-fit: cover;
+  @media (max-width: 415px) {
+    display: none;
+  }
 `;
 
 const Middle = styled.div`
@@ -57,6 +70,9 @@ const Right = styled.div`
   color: #e6e600;
   font-size: 16px;
   font-weight: bold;
+  @media (max-width: 354px) {
+    padding: 10px 5px;
+  }
 `;
 
 const App = () => {

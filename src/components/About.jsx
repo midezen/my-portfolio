@@ -6,15 +6,25 @@ const Container = styled.div`
   gap: 20px;
   padding: 10px 80px;
   margin-bottom: 70px;
+  @media (max-width: 600px) {
+    padding: 10px 20px;
+  }
 `;
 
-const Heading = styled.h1``;
+const Heading = styled.h1`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 const Description = styled.div`
   width: 100%;
   justify-content: center;
   align-items: center;
   display: flex;
+  @media (max-width: 600px) {
+    display: block;
+  }
 `;
 
 const Desc = styled.p`
@@ -22,6 +32,9 @@ const Desc = styled.p`
   display: flex;
   gap: 10px;
   width: 80%;
+  @media (max-width: 600px) {
+    width: 100%;
+  }
 `;
 
 const Dash = styled.div`

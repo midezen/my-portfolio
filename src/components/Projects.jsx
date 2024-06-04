@@ -86,6 +86,9 @@ const BoxHeadingSpan = styled.span`
   font-size: 18px;
   font-weight: bold;
   font-family: "Mulish", sans-serif;
+  @media (max-width: 800px) {
+    font-size: 15px;
+  }
 `;
 
 const BoxDetails = styled.div`
@@ -104,10 +107,16 @@ const DetailsItem = styled.div`
 const DetailsItemLeft = styled.span`
   font-size: 16px;
   font-weight: bold;
+  @media (max-width: 800px) {
+    font-size: 14px;
+  }
 `;
 
 const DetailsItemRight = styled.span`
   font-size: 15px;
+  @media (max-width: 800px) {
+    font-size: 13px;
+  }
 `;
 
 const Projects = () => {
@@ -135,7 +144,18 @@ const Projects = () => {
       </ItemsWrapper>
       <Drawer open={open} onClose={() => setOpen(false)} anchor="right">
         <Box
-          sx={{ width: "700px", height: "100vh", color: "white" }}
+          sx={{
+            width: "700px",
+            height: "100vh",
+            color: "white",
+            "@media (max-width:1024px)": {
+              width: "500px",
+            },
+            "@media (max-width:800px)": {
+              width: "300px",
+              height: "fit-content",
+            },
+          }}
           role="presentation"
           style={{ padding: "10px", backgroundColor: "#181818" }}
         >
@@ -161,9 +181,13 @@ const Projects = () => {
             </DetailsItem>
             <DetailsItem>
               <DetailsItemLeft>Project Hosted Link:</DetailsItemLeft>
-              <a href={currentData?.link} style={{ color: "blue" }}>
-                <DetailsItemRight>{currentData?.link}</DetailsItemRight>
-              </a>
+              {currentData?.link ? (
+                <a href={currentData?.link} style={{ color: "blue" }}>
+                  <DetailsItemRight>{currentData?.link}</DetailsItemRight>
+                </a>
+              ) : (
+                <DetailsItemRight>{currentData?.excuse}</DetailsItemRight>
+              )}
             </DetailsItem>
             <DetailsItem>
               <DetailsItemLeft>Project Github Link:</DetailsItemLeft>
@@ -171,6 +195,11 @@ const Projects = () => {
               <a href={currentData?.github} style={{ color: "blue" }}>
                 <DetailsItemRight>{currentData?.github}</DetailsItemRight>
               </a>
+              {currentData?.server && (
+                <a href={currentData?.server} style={{ color: "blue" }}>
+                  <DetailsItemRight>{currentData?.server}</DetailsItemRight>
+                </a>
+              )}
             </DetailsItem>
           </BoxDetails>
         </Box>
